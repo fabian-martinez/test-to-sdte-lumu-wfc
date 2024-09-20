@@ -14,7 +14,7 @@ def read_text(text: str, format='json'):
             "kwd_density":words_density
             },format)
     
-def read_file(file_path: str, format='plain'):
+def read_file(file_path: str, format='json'):
     _, file_extension = os.path.splitext(file_path)
     if file_extension != ".txt":
         raise ValueError("Invalid File Type")
